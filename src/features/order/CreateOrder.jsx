@@ -5,7 +5,7 @@ import { createOrder } from "../../services/apiRestaurant";
 // https://uibakery.io/regex-library/phone-number
 const isValidPhone = (str) =>
   /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
-    str
+    str,
   );
 
 const fakeCart = [
@@ -42,13 +42,13 @@ function CreateOrder() {
   const cart = fakeCart;
 
   return (
-    <div>
-      <h2>Ready to order? Let's go!</h2>
+    <div className="px-4 py-6">
+      <h2 className="mb-8 text-xl font-semibold">Ready to order? Let's go!</h2>
 
       <Form method="POST">
-        <div>
-          <label>First Name</label>
-          <input type="text" name="customer" required />
+        <div className="mb-5">
+          <label className="mx-3">First Name</label>
+          <input type="text" name="customer" required className="input" />
         </div>
 
         <div>
