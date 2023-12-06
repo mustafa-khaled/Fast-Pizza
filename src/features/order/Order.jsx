@@ -6,6 +6,7 @@ import {
   formatCurrency,
   formatDate,
 } from "../../utils/helpers";
+import OrderItem from "./OrderItem";
 
 function Order() {
   const order = useLoaderData();
@@ -44,6 +45,12 @@ function Order() {
       </div>
 
       {/* <ul className="divide-y divide-stone-200 border-b border-t"></ul> */}
+
+      <ul className="divide-y divide-stone-200 border-b border-t">
+        {cart.map((pizza) => {
+          return <OrderItem key={pizza.pizzaId} item={pizza} />;
+        })}
+      </ul>
 
       <div className="space-y-3  bg-stone-200 px-5 py-5">
         <p className="text-xs font-medium text-stone-600">

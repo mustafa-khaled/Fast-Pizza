@@ -47,20 +47,22 @@ function CreateOrder() {
       <h2 className="mb-8 text-xl font-semibold">Ready to order? Let's go!</h2>
 
       <Form method="POST">
-        <div className="mb-5">
+        <div className="mb-4">
           <label className="mx-3">First Name</label>
           <input type="text" name="customer" required className="input" />
         </div>
 
-        <div>
+        <div className="mb-4">
           <label>Phone number</label>
           <div>
             <input type="tel" name="phone" required className="input" />
           </div>
-          {formErrors?.phone && <p>{formErrors.phone}</p>}
+          {formErrors?.phone && (
+            <p className="text-xs text-red-400">{formErrors.phone}</p>
+          )}
         </div>
 
-        <div className="relative">
+        <div className="relative mb-4">
           <label>Address</label>
           <div>
             <input type="text" name="address" required className="input" />
