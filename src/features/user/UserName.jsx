@@ -1,9 +1,5 @@
-const userName = "Mustafa";
-
-function UserName() {
-  return (
-    <div className="hidden text-sm font-semibold sm:block">{userName}</div>
-  );
+function Username() {
+  return <div className="hidden text-sm font-semibold md:block">Mustafa</div>;
 }
 
-export default UserName;
+export default Username;
