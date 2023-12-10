@@ -10,6 +10,9 @@ export default {
       height: {
         screen: "100dvh",
       },
+      colors: {
+        primary: "#d2401e",
+      },
     },
   },
   plugins: [],
