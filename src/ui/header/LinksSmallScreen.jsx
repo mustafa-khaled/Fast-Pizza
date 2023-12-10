@@ -11,8 +11,8 @@ function LinksSmallScreen({ showList }) {
     <div
       className={`header-links fixed ${
         showList ? "right-[20px]" : "right-[-100%]"
-      } bg-bgWhite top-[70px] z-50 flex h-[300px] w-[calc(100%-40px)]
-             flex-col items-center justify-center gap-[30px] transition-all sm:hidden
+      } top-[80px] z-50 flex h-[250px] w-[calc(100%-40px)] flex-col
+             items-center justify-center gap-[30px] bg-bgWhite transition-all sm:hidden
         `}
     >
       {headerLinks.map((el) => (
