@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         primary: "#d2401e",
+        bgWhite: "#fff",
       },
     },
   },
