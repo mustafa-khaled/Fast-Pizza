@@ -1,14 +1,12 @@
-import { useSelector } from "react-redux";
-import CreateUser from "../../features/user/CreateUser";
-import Button from "../Button";
 import HeroSection from "./HeroSection";
+import Specials from "./Specials";
 
 function Home() {
-  const { userName } = useSelector((state) => state.user);
-
   return (
-    <div>
+    <div className="flex flex-col gap-[50px]">
       <HeroSection />
+      <Specials />
+      <div>COntent</div>
     </div>
   );
 }

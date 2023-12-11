@@ -1,12 +1,12 @@
-import Gallery from "./Gallery";
 import Slider from "./Slider";
+import HeroSectionGallery from "./HeroSectionGallery";
 
 function HeroSection() {
   return (
-    <>
+    <div>
       <Slider />
-      <Gallery />
-    </>
+      <HeroSectionGallery />
+    </div>
   );
 }
 
