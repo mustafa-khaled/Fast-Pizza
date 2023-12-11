@@ -3,7 +3,6 @@ import { formatCurrency } from "../../utils/helpers";
 import { addItem, getCurrentQuantityById } from "../cart/CartSlice";
 import UpdateItemQuantity from "../cart/UpdateItemQuantity";
 import Button from "../../ui/Button";
-import DeleteItem from "../cart/DeleteItem";
 
 function MenuItem({ pizza }) {
   const dispatch = useDispatch();
@@ -24,44 +23,43 @@ function MenuItem({ pizza }) {
   };
 
   return (
-    <li className="flex gap-4 py-2">
+    <div className="rounded-xl">
       <img
         src={imageUrl}
         alt={name}
-        className={`h-24 ${soldOut ? "opacity-70 grayscale" : ""}`}
+        className={` ${
+          soldOut ? "opacity-70 grayscale" : ""
+        } h-[200px] w-full rounded-t-xl object-cover`}
       />
-      <div className="flex grow flex-col pt-0.5">
-        <p className="font-medium">{name}</p>
-        <p className="text-sm capitalize italic text-stone-500">
+      <div className="flex flex-col p-[10px] text-center">
+        <h4 className="text-xl font-medium uppercase">{name}</h4>
+        <p className="my-[5px] text-sm capitalize italic">
           {ingredients.join(", ")}
         </p>
-        <div className="mt-auto flex items-center justify-between">
+        <div className="mb-[10px] mt-auto flex items-center justify-between">
           {!soldOut ? (
-            <p className="text-sm">{formatCurrency(unitPrice)}</p>
+            <p className="mx-auto text-sm">{formatCurrency(unitPrice)}</p>
           ) : (
-            <p className="text-sm font-medium uppercase text-stone-500">
-              Sold out
-            </p>
-          )}
-
-          {isInCart && (
-            <div className="flex items-center gap-1 md:gap-5">
-              <UpdateItemQuantity
-                pizzaId={id}
-                currentQuantity={currentQuantity}
-              />
-              <DeleteItem pizzaId={id} />
-            </div>
-          )}
-
-          {!soldOut && !isInCart && (
-            <Button type="small" onClick={handleAddToCart}>
-              Add to cart
-            </Button>
+            <p className="mx-auto text-sm font-medium uppercase">Sold out</p>
           )}
         </div>
+
+        {isInCart && (
+          <div className="mx-auto ">
+            <UpdateItemQuantity
+              pizzaId={id}
+              currentQuantity={currentQuantity}
+            />
+          </div>
+        )}
+
+        {!soldOut && !isInCart && (
+          <Button type="small" onClick={handleAddToCart}>
+            Add to cart
+          </Button>
+        )}
       </div>
-    </li>
+    </div>
   );
 }
 

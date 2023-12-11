@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
 function Button({ children, disabled, to, type, onClick }) {
-  const base =
-    "inline-block text-sm rounded-full bg-yellow-400 font-semibold uppercase tracking-wide text-stone-800 transition-colors duration-300 hover:bg-yellow-300 focus:bg-yellow-300 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 disabled:cursor-not-allowed";
+  const base = `inline-block text-sm rounded-full bg-primary font-semibold uppercase tracking-wide
+   text-bgWhite transition-colors duration-300 hover:bg-opacity-[0.9] focus:bg-opacity-[0.7] focus:outline-none
+    focus:ring focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed`;
 
   const styles = {
     primary: base + " px-4 py-3 md:px-6 md:py-4",
