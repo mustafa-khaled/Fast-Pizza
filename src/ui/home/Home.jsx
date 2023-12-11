@@ -1,4 +1,5 @@
 import HeroSection from "./HeroSection";
+import OurTeam from "./OurTeam";
 import Specials from "./Specials";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <div className="flex flex-col gap-[50px]">
       <HeroSection />
       <Specials />
+      <OurTeam />
       <div>COntent</div>
     </div>
   );

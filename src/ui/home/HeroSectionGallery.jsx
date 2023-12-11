@@ -12,7 +12,7 @@ function HeroSectionGallery() {
         return (
           <div
             key={img}
-            className=" w-full overflow-hidden bg-red-400  sm:w-[calc(100%/2-10px)] md:w-[calc(100%/4-10px)]"
+            className="w-full overflow-hidden sm:w-[calc(100%/2-10px)] md:w-[calc(100%/4-10px)]"
           >
             <img
               src={img}

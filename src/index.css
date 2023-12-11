@@ -55,3 +55,7 @@
 p {
   color: #767676;
 }
+
+.member-box:hover .member-info {
+  opacity: 1;
+}

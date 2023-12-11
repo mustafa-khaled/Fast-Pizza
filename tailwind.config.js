@@ -13,6 +13,8 @@ export default {
       colors: {
         primary: "#d2401e",
         bgWhite: "#fff",
+        gray: "#767676",
+        lightFray: "#eee",
       },
     },
   },
