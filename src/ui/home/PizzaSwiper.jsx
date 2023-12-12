@@ -34,7 +34,7 @@ function PizzaSwiper() {
 
         <Swiper
           // className="w-full"
-          className=" grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(270px,1fr))]"
+          className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(270px,1fr))]"
           modules={[Navigation, Pagination, Scrollbar]}
           spaceBetween={50}
           navigation
