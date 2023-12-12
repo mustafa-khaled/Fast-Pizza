@@ -5,7 +5,7 @@ import Specials from "./Specials";
 
 function Home() {
   return (
-    <div className="flex flex-col gap-[70px]">
+    <div className="mb-[50px] flex flex-col gap-[70px]">
       <HeroSection />
       <Specials />
       <OurTeam />
