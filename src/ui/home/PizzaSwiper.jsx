@@ -7,6 +7,7 @@ import "swiper/css";
 
 import MenuItem from "../../features/menu/MenuItem";
 import Container from "../Container";
+import SectionHead from "../SectionHead";
 
 function PizzaSwiper() {
   const fetcher = useFetcher();
@@ -20,18 +21,11 @@ function PizzaSwiper() {
 
   return (
     <Container>
+      <SectionHead
+        title={"   Choose Your Flavor"}
+        description={"The Best Pizza Menu In Town"}
+      />
       <div>
-        <div className="mb-[30px] text-center font-bold">
-          <p className="text-sm uppercase text-primary">Choose Your Flavor</p>
-          <h2 className="my-[5px] text-xl font-bold uppercase sm:text-3xl">
-            The Best Pizza Menu In Town
-          </h2>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit
-            arcu in pretium molestie. Interdum et malesuada fames ac.
-          </p>
-        </div>
-
         <Swiper
           // className="w-full"
           className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(270px,1fr))]"

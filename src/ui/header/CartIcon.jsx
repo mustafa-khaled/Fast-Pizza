@@ -7,7 +7,7 @@ function CartIcon() {
   const cartItems = useSelector(getCart).length;
 
   return (
-    <Link className="relative">
+    <Link to={"/cart"} className="relative">
       <MdDeliveryDining className="cursor-pointer text-3xl" />
 
       <span

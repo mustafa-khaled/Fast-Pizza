@@ -8,7 +8,7 @@ function AppLayout() {
   const isLoading = navigation.state === "loading";
 
   return (
-    <div className="bg-stone-100 text-stone-800">
+    <div className="text-stone-800">
       {isLoading && <Loader />}
 
       <Header />
