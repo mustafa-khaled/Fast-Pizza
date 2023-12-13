@@ -1,6 +1,7 @@
 import Categories from "./Categories";
 import HeroSection from "./HeroSection";
 import MadeWithLove from "./MadeWithLove";
+import WhatYouGet from "./WhatYouGet";
 
 function OurServices() {
   return (
@@ -8,6 +9,7 @@ function OurServices() {
       <HeroSection />
       <Categories />
       <MadeWithLove />
+      <WhatYouGet />
     </div>
   );
 }
