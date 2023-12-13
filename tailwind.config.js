@@ -15,7 +15,7 @@ export default {
         secondary: "#b7903c",
         bgWhite: "#fff",
         gray: "#767676",
-        lightFray: "#eee",
+        lightGray: "#eee",
       },
     },
   },

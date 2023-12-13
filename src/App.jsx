@@ -12,6 +12,7 @@ import CreateOrder, {
   action as createOrderAction,
 } from "./features/order/CreateOrder";
 import { action as updateOrderAction } from "./features/order/UpdateOrder";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,23 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    const unsubscribe = router.subscribe((location) => {
+      scrollToTop();
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
   return <RouterProvider router={router} />;
 }
 

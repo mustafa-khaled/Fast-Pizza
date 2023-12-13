@@ -19,7 +19,7 @@ function Header() {
   }
 
   return (
-    <header className="fixed top-0 z-50 flex h-[70px] w-full items-center justify-center bg-bgWhite">
+    <header className="fixed top-0 z-50 flex h-[70px] w-full items-center justify-center bg-bgWhite shadow-md">
       <Container>
         <div className="flex items-center justify-between gap-[20px] ">
           {/* Logo */}
