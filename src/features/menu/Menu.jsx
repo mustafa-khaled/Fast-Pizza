@@ -12,7 +12,7 @@ function Menu() {
   return (
     <div className="mb-[50px]">
       <div
-        className="mb-[60px] flex h-[50vh] flex-col items-center justify-center bg-cover px-[10px]"
+        className="mb-[60px] flex h-[60vh] flex-col items-center justify-center bg-cover px-[10px]"
         style={{ backgroundImage: `url(${photo})`, backgroundPosition: "50%" }}
       >
         <p className="font-bold uppercase text-bgWhite">Choose Your Favorite</p>

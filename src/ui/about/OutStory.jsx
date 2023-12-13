@@ -24,7 +24,7 @@ const ourStoryData = [
 function OutStory() {
   return (
     <Container>
-      <div className="flex flex-col gap-[10px] md:flex-row">
+      <div className="flex flex-col gap-[20px] md:flex-row">
         <div className="w-full md:w-[50%]">
           <div>
             <p className="font-bold uppercase text-primary">Our Story</p>
@@ -41,7 +41,7 @@ function OutStory() {
             {ourStoryData.map((el) => {
               return (
                 <div key={el.title} className="mb-[10px]">
-                  <h3 className="text-secondary text-xl font-bold uppercase">
+                  <h3 className="text-xl font-bold uppercase text-secondary">
                     {el.title}
                   </h3>
                   <p className="text-sm">{el.description}</p>

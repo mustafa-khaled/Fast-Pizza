@@ -48,6 +48,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header-links a.active {
   color: #d2401e;
 }

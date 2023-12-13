@@ -4,6 +4,7 @@ const headerLinks = [
   { title: "Home", to: "/" },
   { title: "Menu", to: "/menu" },
   { title: "About", to: "/about" },
+  { title: "Our Services", to: "/services" },
 ];
 
 function LinksBigScreen() {
