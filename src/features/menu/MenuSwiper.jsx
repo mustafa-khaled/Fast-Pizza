@@ -39,7 +39,7 @@ function MenuSwiper() {
       modules={[Navigation, Pagination, Scrollbar, Autoplay]}
       spaceBetween={50}
       autoplay={{
-        delay: 500,
+        delay: 1000,
         disableOnInteraction: false,
       }}
       breakpoints={{
