@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from "./ui/home/Home";
@@ -12,7 +13,6 @@ import CreateOrder, {
   action as createOrderAction,
 } from "./features/order/CreateOrder";
 import { action as updateOrderAction } from "./features/order/UpdateOrder";
-import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {

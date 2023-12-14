@@ -9,7 +9,7 @@ function MadeWithLove() {
           <img src={image} alt="Made With Love" />
         </div>
 
-        <div className="w-full md:w-[50%]" data-aos="fade-left">
+        <div className="w-full md:w-[50%]" data-aos="fade-right">
           <p className="font-bold uppercase text-primary">Made With Love</p>
           <h2 className="my-[10px] text-2xl font-bold uppercase sm:text-4xl">
             Every Day Specials

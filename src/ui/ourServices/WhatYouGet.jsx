@@ -21,10 +21,8 @@ function WhatYouGet() {
         description={"We’ve Got You Covered!"}
       />
       <div
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
         className="mt-[20px] flex flex-wrap items-center gap-[10px]"
       >
         {whatYouGetData.map((el) => {

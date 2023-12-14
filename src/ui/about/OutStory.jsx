@@ -37,7 +37,7 @@ function OutStory() {
             </p>
           </div>
 
-          <div className="mt-[30px] ">
+          <div className="mt-[30px]">
             {ourStoryData.map((el) => {
               return (
                 <div key={el.title} className="mb-[10px]">
@@ -53,8 +53,8 @@ function OutStory() {
 
         {/* Photo */}
         <div
-          data-aos="fade-left"
           className="h-[500px] w-full bg-cover md:h-auto md:w-[50%]"
+          data-aos="fade-right"
           style={{
             backgroundImage: `url(${photo1})`,
             backgroundPosition: "50%",

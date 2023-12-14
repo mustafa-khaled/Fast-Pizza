@@ -4,13 +4,13 @@ import Container from "../Container";
 function HeroSection() {
   return (
     <div
-      className="h-[60vh] bg-cover "
+      className="h-[60vh] w-[100%] bg-cover"
       style={{ backgroundImage: `url(${image})`, backgroundPosition: "50%" }}
     >
       <Container>
         <div
-          className="flex h-[60vh] w-full flex-col items-center justify-center text-center
-         sm:items-start sm:text-left md:w-[60%]"
+          className="flex h-[60vh] w-full flex-col items-center justify-center
+         text-center sm:items-start sm:text-left md:w-[60%]"
         >
           <p className="text-base  uppercase text-bgWhite sm:text-lg">
             Welcome To The Family

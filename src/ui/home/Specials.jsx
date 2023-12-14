@@ -7,19 +7,16 @@ const specialsData = ["$10", "$20", "$30"];
 function Specials() {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col gap-[20px] md:flex-row">
         <div
-          data-aos="fade-right"
-          className="flex w-full items-center justify-center bg-cover p-[20px] md:w-[50%]"
+          className="flex h-[400px] w-full items-center justify-center bg-cover md:w-1/2"
           style={{ backgroundImage: `url(${image})` }}
+          data-aos="fade-right"
         >
-          <img src={logo} alt="Specials logo" className="w-[400px]" />
+          <img src={logo} alt="Specials logo" className="max-w-[200px]" />
         </div>
 
-        <div
-          data-aos="fade-left"
-          className=" w-full pt-[20px] sm:pl-[20px] md:w-[50%]"
-        >
+        <div className="w-full md:w-1/2" data-aos="fade-right">
           <h2 className="text-2xl font-bold uppercase sm:text-3xl">
             Specials:
           </h2>
