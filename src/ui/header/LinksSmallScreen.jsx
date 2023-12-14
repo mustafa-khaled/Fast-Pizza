@@ -28,7 +28,7 @@ function LinksSmallScreen({ showList, closeList }) {
             key={el.title}
             to={el.to}
             onClick={closeList}
-            className={"font-bold uppercase"}
+            className={"text-sm font-bold uppercase"}
           >
             {el.title}
           </NavLink>

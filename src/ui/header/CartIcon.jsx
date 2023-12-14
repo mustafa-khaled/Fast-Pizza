@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { MdDeliveryDining } from "react-icons/md";
+import { MdOutlineDeliveryDining } from "react-icons/md";
+
 import { useSelector } from "react-redux";
 import { getCart } from "../../features/cart/CartSlice";
 
@@ -8,7 +9,7 @@ function CartIcon() {
 
   return (
     <Link to={"/cart"} className="relative">
-      <MdDeliveryDining className="cursor-pointer text-3xl" />
+      <MdOutlineDeliveryDining className="cursor-pointer text-2xl sm:text-3xl" />
 
       <span
         className="absolute left-[-3px] top-[-3px] flex h-[15px] w-[15px] items-center justify-center
