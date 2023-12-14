@@ -9,13 +9,17 @@ function Specials() {
     <Container>
       <div className="flex flex-col md:flex-row">
         <div
+          data-aos="fade-right"
           className="flex w-full items-center justify-center bg-cover p-[20px] md:w-[50%]"
           style={{ backgroundImage: `url(${image})` }}
         >
           <img src={logo} alt="Specials logo" className="w-[400px]" />
         </div>
 
-        <div className=" w-full pt-[20px] sm:pl-[20px] md:w-[50%]">
+        <div
+          data-aos="fade-left"
+          className=" w-full pt-[20px] sm:pl-[20px] md:w-[50%]"
+        >
           <h2 className="text-2xl font-bold uppercase sm:text-3xl">
             Specials:
           </h2>

@@ -17,6 +17,7 @@ function Categories() {
         {categoriesData.map((el) => {
           return (
             <div
+              data-aos="fade-right"
               key={el.title}
               className="w-full sm:w-[calc(100%/2-20px)]  md:w-[calc(100%/3-20px)]"
             >

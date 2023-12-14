@@ -13,12 +13,14 @@ function Team() {
       {team.map((el) => {
         return (
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
             key={el}
             className="member-box relative w-full overflow-hidden sm:w-[calc(100%/2-10px)] md:w-[calc(100%/4-10px)]"
           >
             <img src={el} alt="team member" className="w-full" />
 
-            <div className="member-info bg-lightGray absolute left-0 top-0 h-full w-full p-[10px] opacity-[0.0] transition-all">
+            <div className="member-info absolute left-0 top-0 h-full w-full bg-lightGray p-[10px] opacity-[0.0] transition-all">
               <div
                 className="flex h-full flex-col items-center justify-center gap-[10px] bg-primary p-[10px]
                  text-center font-bold text-bgWhite"

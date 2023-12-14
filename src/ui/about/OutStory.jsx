@@ -25,7 +25,7 @@ function OutStory() {
   return (
     <Container>
       <div className="flex flex-col gap-[20px] md:flex-row">
-        <div className="w-full md:w-[50%]">
+        <div className="w-full md:w-[50%]" data-aos="fade-right">
           <div>
             <p className="font-bold uppercase text-primary">Our Story</p>
             <h2 className="my-[10px] text-3xl font-bold uppercase md:text-5xl">
@@ -53,6 +53,7 @@ function OutStory() {
 
         {/* Photo */}
         <div
+          data-aos="fade-left"
           className="h-[500px] w-full bg-cover md:h-auto md:w-[50%]"
           style={{
             backgroundImage: `url(${photo1})`,

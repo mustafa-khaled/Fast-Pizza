@@ -23,7 +23,11 @@ function MenuItem({ pizza }) {
   };
 
   return (
-    <div className="rounded-xl">
+    <div
+      className="rounded-xl"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <img
         src={imageUrl}
         alt={name}

@@ -3,7 +3,7 @@ import Team from "../Team";
 
 function OurTeam() {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div
         className="h-[80vh] bg-cover p-[30px] sm:p-[60px]"
         style={{
