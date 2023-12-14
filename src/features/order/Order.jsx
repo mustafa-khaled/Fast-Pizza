@@ -1,4 +1,4 @@
-// Test ID: IIDSAT
+// Test ID: IIDSAT ZP5P24
 
 import { useEffect } from "react";
 import { useFetcher, useLoaderData } from "react-router-dom";
@@ -53,7 +53,7 @@ function Order() {
           </div>
         </div>
 
-        <div className="bg-lightGray my-[20px] flex flex-wrap items-center justify-between gap-2 px-6 py-5">
+        <div className="my-[20px] flex flex-wrap items-center justify-between gap-2 bg-lightGray px-6 py-5">
           <p className="font-medium">
             {deliveryIn >= 0
               ? `Only ${calcMinutesLeft(estimatedDelivery)} minutes left 😃`
@@ -64,7 +64,7 @@ function Order() {
           </p>
         </div>
 
-        <ul className="border-lightGray divide-lightGray mb-[20px] divide-y border-b">
+        <ul className="mb-[20px] divide-y divide-lightGray border-b border-lightGray">
           {cart.map((item) => (
             <OrderItem
               item={item}
@@ -78,7 +78,7 @@ function Order() {
           ))}
         </ul>
 
-        <div className="bg-lightGray space-y-2 px-6 py-5">
+        <div className="mb-[20px] space-y-2 bg-lightGray px-6 py-5">
           <p className="text-sm font-medium ">
             Price pizza: {formatCurrency(orderPrice)}
           </p>

@@ -18,7 +18,7 @@ function Team() {
           >
             <img src={el} alt="team member" className="w-full" />
 
-            <div className="member-info absolute left-0 top-0 h-full w-full bg-lightFray p-[10px] opacity-[0.0] transition-all">
+            <div className="member-info bg-lightGray absolute left-0 top-0 h-full w-full p-[10px] opacity-[0.0] transition-all">
               <div
                 className="flex h-full flex-col items-center justify-center gap-[10px] bg-primary p-[10px]
                  text-center font-bold text-bgWhite"
