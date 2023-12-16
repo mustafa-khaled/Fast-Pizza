@@ -51,7 +51,7 @@ function PizzaSwiper() {
           }}
         >
           {fetcher?.data?.length > 0 &&
-            fetcher?.data?.slice(0, 7)?.map((item) => {
+            fetcher?.data?.slice(4, 10)?.map((item) => {
               return (
                 <SwiperSlide key={item.id}>
                   <MenuItem pizza={item} key={item.id} />

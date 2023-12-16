@@ -24,7 +24,7 @@ function MenuItem({ pizza }) {
 
   return (
     <div
-      className="rounded-xl"
+      className="relative rounded-xl"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
     >
@@ -35,9 +35,9 @@ function MenuItem({ pizza }) {
           soldOut ? "opacity-70 grayscale" : ""
         } h-[200px] w-full rounded-t-xl object-cover`}
       />
-      <div className="flex flex-col p-[10px] text-center">
-        <h4 className="text-xl font-medium uppercase">{name}</h4>
-        <p className="my-[5px] text-sm capitalize italic">
+      <div className="flex h-[170px] flex-col p-[10px] text-center">
+        <h4 className="text-lg font-medium uppercase sm:text-xl">{name}</h4>
+        <p className="my-[5px] text-xs capitalize italic">
           {ingredients.join(", ")}
         </p>
         <div className="mb-[10px] mt-auto flex items-center justify-between">
@@ -49,12 +49,7 @@ function MenuItem({ pizza }) {
         </div>
 
         {isInCart && (
-          <div className="mx-auto ">
-            <UpdateItemQuantity
-              pizzaId={id}
-              currentQuantity={currentQuantity}
-            />
-          </div>
+          <UpdateItemQuantity pizzaId={id} currentQuantity={currentQuantity} />
         )}
 
         {!soldOut && !isInCart && (

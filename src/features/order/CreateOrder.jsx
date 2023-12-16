@@ -70,7 +70,7 @@ function CreateOrder() {
             <div className="grow">
               <input
                 className="input w-full"
-                type="tel"
+                type="number"
                 name="phone"
                 required
               />
